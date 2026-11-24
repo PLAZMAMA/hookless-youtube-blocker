@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body { font: 13px system-ui, sans-serif; width: 270px; margin: 10px; }
+  h1 { font-size: 15px; margin: 0 0 8px; }
+  label { display: block; padding: 2px 0; }
+  label:has(input:disabled) { opacity: .5; }
+  button { width: 100%; padding: 6px; margin-bottom: 8px; }
+  #lock p { margin: 0 0 8px; font-weight: 600; }
+  #minutes { width: 4em; }
+  hr { border: 0; border-top: 1px solid #ccc; }
+</style>
+<h1>Hookless</h1>
+<div id="lock"></div>
+<label>Wait before turning off (min) <input id="minutes" type="number" min="0" step="1"></label>
+<hr>
+<div id="features"></div>
+<script src="features.js"></script>
+<script src="popup.js"></script>
